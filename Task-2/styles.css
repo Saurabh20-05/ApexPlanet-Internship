@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: calibri;
+    background-color: beige;
+}
+
+.header{
+    width: 100%;
+    height: 13%;
+    background-color: rgb(227, 113, 113);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-heading{
+    font-size: 3rem;
+    color: rgb(0, 0, 78);
+}
+
+.nav{
+    display: flex;
+    gap: 4rem;
+}
+
+.nav a{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(86, 84, 84);
+}
+
+.nav a:hover{
+    color: rgb(3, 3, 220);
+}
+
+main{
+    width: 100%;
+    padding:2rem 6rem;
+}
+
+.form-heading{
+    font-size: 2rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-container{
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 3rem;
+    background-color: rgb(226, 224, 224);
+    border-radius: 1.2rem;
+    border: 1px solid gray;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.input{
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    border: 1px solid rgb(217, 214, 214);
+    border-radius: 0.8rem;
+}
+
+.button{
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    width: 25%;
+}
+
+.button:hover{
+    background-color: rgb(77, 77, 250);
+}
+
+.content-heading{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.content-area{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+@media screen and (max-width:600px){
+    .content-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    
+}
+
+.content1, .content2{
+    background-color: rgb(232, 230, 230);
+    border: 1px solid gray;
+    border-radius: 1.2rem;
+    padding: 3rem;
+}
+
+.content-area h2{
+    margin-bottom: 1.3rem;
+}
+
+.content-area input{
+    width: 8rem;
+    height: 2rem;
+    padding: 0.6rem;
+    margin-bottom: 1.3rem;
+}
+
+.content-area button{
+    height: 1.8rem;
+    width: 5rem;
+    border-radius: 0.6rem;
+    border: 1px solid gray;
+}
+
+.content-area button:hover{
+    background-color: rgb(66, 66, 255);
+    color: white;
+    border: none;
+}
+
+.gallery-container img {
+    max-width: 8rem;
+    max-height: 8rem;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 0.6rem;
+    margin: 0.5rem;
+}
+
+
+footer{
+    background-color: rgb(227, 113, 113);
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    width: 100%;
+    font-weight: bold;
+}
