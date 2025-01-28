@@ -15,29 +15,32 @@ body {
 .header{
     width: 100%;
     height: 12%;
-    background-color: rgb(255, 108, 108);
+    background-color: #1E3A8A;
     text-align: center;
     padding-top: 0.8rem;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 1.5rem;
 }
 
 .quiz{
     width: 100%;
-    background-color: rgb(210, 209, 209);
+    background-color: #F3F4F6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 2rem;
 }
 
 .quiz-heading{
     margin-top: 3rem;
     font-size: 2.2rem;
+    color: #374151;
 }
 
 .quiz-container{
-    background-color: beige;
+    background-color: rgba(45, 219, 149, 0.747);
     padding: 3rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
@@ -103,26 +106,24 @@ body {
 
 
 
-
-
-
-
-
 .image{
     width: 100%;
-    background-color: rgb(211, 211, 3);
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3rem auto;
     display: flex;
     flex-direction: column;
+    padding: 0 2rem;
+
 }
 
 .image-heading{
     margin: 3rem;
     font-size: 2rem;
     font-weight: bold;
+    color: #1F2937;
 }
 
 .carousel{
@@ -201,21 +202,24 @@ body {
 
 .joke{
     width: 100%;
-    background-color: rgb(196, 196, 174);
+    background-color: #FAF3E0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 2rem;
+
 }
 
 .joke-heading{
     margin: 3rem;
     font-size: 2rem;
     font-weight: bold;
+    color: #4B2F25;
 }
 
 .joke-container{
-    background-color: beige;
+    background-color: rgba(254, 32, 32, 0.574);
     padding: 2rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
@@ -242,7 +246,7 @@ body {
 
 .footer{
     width: 100%;
-    background-color: red;
+    background-color: #1F2937;
     height: 10%;
     text-align: center;
     padding: 1.2rem;
