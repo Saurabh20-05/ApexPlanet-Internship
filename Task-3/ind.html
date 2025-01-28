@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task-3</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+    
+    <header class="header">
+        <h1>ApexPlanet Internship Task-3</h1>
+    </header>
+
+
+    <main>
+
+        <div class="quiz">
+
+            <div class="quiz-heading">
+                <h2>Interactive Quiz with Multiple questions - </h2>
+            </div>
+    
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <h2 id="question"></h2>
+                    <ul id="options" class="options"></ul>
+                </div>
+    
+                <div id="score" class="score" style="display: none;"></div>
+                <button id="restart" class="restart-button" style="display: none;">Restart Quiz</button>
+            </div>
+
+        </div>
+
+    
+        <div class="image">
+    
+            <div class="image-heading">
+                <h2>An Image Carousel that Rotates Images on User Interaction - </h2>
+            </div>
+    
+            <div class="carousel">
+    
+                <div class="carousel-image">
+                    <img src="https://images.pexels.com/photos/28539583/pexels-photo-28539583/free-photo-of-majestic-mountain-peaks-at-sunrise.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1">
+                    <img src="https://images.pexels.com/photos/30243449/pexels-photo-30243449/free-photo-of-majestic-snow-covered-mountain-peaks-in-winter.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 2">
+                    <img src="https://images.pexels.com/photos/28271638/pexels-photo-28271638/free-photo-of-a-desert-landscape-with-mountains-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3">
+                </div>
+    
+                <div class="carousel-controls">
+                    <button id="prev">&#10094;</button>
+                    <button id="next">&#10095;</button>
+                </div>
+    
+                <div class="carousel-indicators">
+                    <span data-index="0" class="active"></span>
+                    <span data-index="1"></span>
+                    <span data-index="2"></span>
+                </div>
+    
+            </div>
+
+        </div>
+
+
+        <div class="joke">
+
+            <div class="joke-heading">
+                <h2>Fetch Joke from a Public Joke API - </h2>
+            </div>
+
+            <div class="joke-container">
+                <h1>Get a Random Joke</h1>
+                <button id="getJokeBtn">Get Joke</button>
+                <div id="joke-display" class="joke-display"></div>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <p>&copy; 2025 Task-3 Webpage. All Rights Reserved.</p>
+    </footer>
+    
+    
+</body>
+</html>

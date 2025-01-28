@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: calibri;
+    background-color: beige;
+    
+}
+
+.header{
+    width: 100%;
+    height: 12%;
+    background-color: rgb(255, 108, 108);
+    text-align: center;
+    padding-top: 0.8rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.quiz{
+    width: 100%;
+    background-color: rgb(210, 209, 209);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-heading{
+    margin-top: 3rem;
+    font-size: 2.2rem;
+}
+
+.quiz-container{
+    background-color: beige;
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 1.2rem;
+    max-width: 600px;
+}
+
+#question{
+    padding-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+#options{
+    list-style: none;
+}
+
+.options button{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgb(203, 200, 200);
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 2px gray;
+    background-color: rgb(233, 231, 231);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+  
+.options button:hover{
+    background: rgb(96, 96, 249);
+    color: white;
+    border: 1px solid rgb(96, 96, 249);
+    box-shadow: 0px 1px 2px rgb(112, 112, 255);
+}
+
+.score{
+    font-size: 2rem;
+    margin: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+  
+.restart-button{
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    background: rgb(1, 176, 65);
+    color: whitesmoke;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+  
+.restart-button:hover{
+    background: rgb(22, 22, 245);
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+.image{
+    width: 100%;
+    background-color: rgb(211, 211, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-heading{
+    margin: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel{
+    margin: 3rem auto;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 4px gray;
+    position: relative;
+}
+
+
+.carousel-image {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    width: 100%; 
+}
+
+.carousel-image img{
+    width: 100%;
+    border: none;
+}
+
+.carousel-controls{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s;
+}
+
+.carousel-controls button:hover{
+    background-color: black;
+}
+
+.carousel-indicators{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.carousel-indicators span{
+    height: 0.6rem;
+    width: 0.6rem;
+    margin: 0 0.3rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.carousel-indicators .active {
+    background-color: white;
+}
+
+
+
+
+
+
+
+.joke{
+    width: 100%;
+    background-color: rgb(196, 196, 174);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.joke-heading{
+    margin: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.joke-container{
+    background-color: beige;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 1.2rem;
+    max-width: 600px;
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.joke-container button{
+    background-color: rgb(73, 73, 255);
+    color: white;
+    padding: 1rem 0.5rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    max-width: 6rem;
+}
+
+
+.footer{
+    width: 100%;
+    background-color: red;
+    height: 10%;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    color: white;
+}
