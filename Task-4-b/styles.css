@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: calibri;
+    background-color: rgb(251, 251, 236);
+    
+}
+
+.header{
+    width: 100%;
+    height: 12%;
+    background-color: #1E3A8A;
+    text-align: center;
+    padding: 0.8rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.to-do-section{
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(127, 4, 4);
+    margin: 1rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    .header{
+        font-size: 1.4rem;
+        transition: 0.3s;
+    } 
+}
+
+.tasklist{
+    width: 28rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: rgb(98, 98, 98);
+}
+
+.add-task{
+    padding: 0.5rem 1rem;
+    width: 8rem;
+    height: 2.5rem;
+    margin: 0rem 1rem;
+    border: 1px solid rgb(0, 186, 124);
+    border-radius: 1rem;
+    background-color: rgb(66, 154, 254);
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-task:hover{
+    background-color: rgb(45, 45, 254);
+}
+
+
+#task-list{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+#task-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(235, 247, 250);
+    border: 1px solid rgb(205, 205, 205);
+    padding: 0.6rem 1.2rem;
+    margin: 0.6rem 1rem;
+    border-radius: 0.7rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+#task-list li:hover{
+    background: rgb(222, 221, 221);
+}
+
+.delete-task{
+    background: #dc3545;
+    color: white;
+    border: rgb(110, 0, 0);
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.delete-task:hover{
+    background: rgb(172, 0, 0);
+}
+
+
+@media screen and (max-width: 800px){
+    .header{
+        font-size: 1.15rem;
+        transition: 0.3s;
+    } 
+
+    #task-list{
+        max-width: 300px;
+    }
+
+    .tasklist{
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        font-size: 0.8rem;
+    }
+    
+}
