@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>PRODUCT PAGE</h1>
+    </header>
+
+    
+    <div class="container">
+
+        <div class="filters">
+
+            <select id="categoryfilter">
+                <option value="all">All Categories</option>
+                <option value="men">Men's Fashion</option>
+                <option value="women">Women's Fashion</option>
+                <option value="kids">Kids' Fashion</option>
+                <option value="electronics">Electronics</option>
+                <option value="sports">Sports & Fitness</option>
+            </select>
+
+            <input type="number" id="pricefilter" placeholder="Maximum Price">
+
+            <select id="sortrating" onchange="sortitems()">
+                <option value="">Sort by Rating</option>
+                <option value="high">High to Low</option>
+                <option value="low">Low to High</option>
+            </select>
+
+            <button onclick="applyfilters()" id="filterbutton">Filter</button>
+
+        </div>
+        
+        <div id="productgrid" class="product-grid">
+
+            <div class="product" data-category="men" data-price="999" data-rating="4.5">
+                <img src="zshirt.jpg" alt="Men's Shirt">
+                <h3>Men's Shirt</h3>
+                <p>Price: ₹999</p>
+                <p>Rating: 4.5</p>
+            </div>
+
+            <div class="product" data-category="men" data-price="1279" data-rating="4.3">
+                <img src="zjeans.jpg" alt="Men's Jeans">
+                <h3>Men's Jeans</h3>
+                <p>Price: ₹1279</p>
+                <p>Rating: 4.3</p>
+            </div>
+
+            <div class="product" data-category="men" data-price="1599" data-rating="4.1">
+                <img src="zshoes.jpg" alt="Men's Shoes">
+                <h3>Men's Shoes</h3>
+                <p>Price: ₹1599</p>
+                <p>Rating: 4.1</p>
+            </div>
+
+            <div class="product" data-category="women" data-price="749" data-rating="4.2">
+                <img src="zdress.jpg" alt="Women's Dress">
+                <h3>Women's Dress</h3>
+                <p>Price: ₹749</p>
+                <p>Rating: 4.2</p>
+            </div>
+
+            <div class="product" data-category="women" data-price="1899" data-rating="4.0">
+                <img src="zhandbag.jpg" alt="Women's Handbag">
+                <h3>Women's Handbag</h3>
+                <p>Price: ₹1899</p>
+                <p>Rating: 4.0</p>
+            </div>
+
+            <div class="product" data-category="kids" data-price="799" data-rating="4.0">
+                <img src="zjacket.jpg" alt="Kids' Jacket">
+                <h3>Kids' Jacket</h3>
+                <p>Price: ₹799</p>
+                <p>Rating: 4.0</p>
+            </div>
+            
+            <div class="product" data-category="electronics" data-price="24999" data-rating="4.7">
+                <img src="zlaptop.webp" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>Price: ₹64,999</p>
+                <p>Rating: 4.7</p>
+            </div>
+
+            <div class="product" data-category="electronics" data-price="12999" data-rating="4.5">
+                <img src="zsmartphone.webp" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p>Price: ₹12,999</p>
+                <p>Rating: 4.5</p>
+            </div>
+
+            <div class="product" data-category="electronics" data-price="1999" data-rating="4.3">
+                <img src="zheadphones.jpeg" alt="Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>Price: ₹1,999</p>
+                <p>Rating: 4.3</p>
+            </div>
+            
+            <div class="product" data-category="sports" data-price="2999" data-rating="4.6">
+                <img src="ztreadmill.webp" alt="Treadmill">
+                <h3>Treadmill</h3>
+                <p>Price: ₹22,999</p>
+                <p>Rating: 4.6</p>
+            </div>
+
+            <div class="product" data-category="sports" data-price="1499" data-rating="4.4">
+                <img src="zdumbells.jpg" alt="Dumbbells">
+                <h3>Dumbbells 7.5kg (Set of 2)</h3>
+                <p>Price: ₹1,499</p>
+                <p>Rating: 4.4</p>
+            </div>
+
+            <div class="product" data-category="sports" data-price="999" data-rating="4.2">
+                <img src="zyogamat.webp" alt="Yoga Mat">
+                <h3>Yoga Mat</h3>
+                <p>Price: ₹999</p>
+                <p>Rating: 4.2</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Task-4 (STEP-3) Webpage. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
